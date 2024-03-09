@@ -931,6 +931,38 @@ body.darkMode {
     justify-self: center;
 }
 
+.show__message__invisible {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.message__container {
+    position: fixed;
+    bottom: 0;
+    background-color: hsla(240, 18%, 75%, .8);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 2rem;
+    transition: all .3s;
+    z-index: 100;
+}
+
+.message__content {
+    background-color: #fff;
+    text-align: center;
+    width: 30%;
+    height: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    transition: all .3s;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
     padding-top: 2rem;
@@ -1057,6 +1089,16 @@ color: #fff;
     transform: translate(-50%);
     cursor: pointer;
     font-size: 3rem;
+}
+
+.modal__close4 {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%);
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #005acd;
 }
 
 .sources__icon {

@@ -146,6 +146,28 @@ const showMenu = (toggleId, bodyId)=>{
   }
 showMenu('nav', 'body-pd')
 
+/*==================== CONTACT ====================*/
+const showMessageSent = (openButton, modalContent) =>{
+    const openBtn2 = document.getElementById(openButton),
+    modalContainer2 = document.getElementById(modalContent)
+    
+    if(openBtn2 && modalContainer2){
+        openBtn2.addEventListener('click', ()=>{
+            modalContainer2.classList.remove('show__message__invisible')
+        })
+    }
+}
+showMessageSent('send-message','message-modal-container')
+
+
+const closeMessageSent = document.querySelectorAll('.close-modal')
+
+function closeMessageSentModal(){
+    const modalContainer = document.getElementById('message-modal-container')
+    modalContainer.classList.add('show__message__invisible')
+}
+closeMessageSent.forEach(c => c.addEventListener('click', closeMessageSentModal))
+
 /*==================== FOOTER ====================*/
 
 
