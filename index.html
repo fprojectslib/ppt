@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--==================== TITLE & ICON ====================-->
+        <title>PPT</title>
+        <link rel="icon" type="image/x-icon" href="favicoo.ico" />
+        <!--==================== ICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--==================== SCROLL REVEAL ====================-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body class="preload" id="body-pd">
+        <!--==================== LOADER ====================-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <div class="loader">
+            <h1 class="loader__logo">Hello!</h1>
+            <span class="loader__text">Loading... Please wait!</span>
+        </div>
+        <script>
+            $(window).on('load', function(){
+                $(".loader").slideUp(300);
+                $("main").fadeIn(0);
+                $("header").fadeIn(0);
+                $("body").removeClass("preload");
+                /*==================== SCROLL REVEAL ====================*/
+                let sr = ScrollReveal({
+                    duration: 2500,
+                    distance: "80px",
+                })
+
+                sr.reveal(".home__content", {origin: "top"})
+                sr.reveal(".home__buttons", {delay: 500})
+                sr.reveal(".home__social", {delay: 500})
+                sr.reveal(".social__coming", {delay: 500})
+                sr.reveal(".contact__container", {delay: 400})
+                sr.reveal(".learning")
+            });
+        </script>
+        <!--==================== NAV ====================-->
+        <header class="header" id="header">
+            <nav class="navbar" id="nav">
+                <ul class="navbar-nav">
+                    <li class="logo">
+                        <a href="#home" class="nav-link active-link">
+                            <span class="logo-text">PPT</span>
+                            <i class="uil uil-angle-double-right logo__icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#achievment" class="nav-link">
+                            <i class="uil uil-trophy"></i>
+                            <span class="link-text">Achievments</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#learning" class="nav-link">
+                            <i class="uil uil-graduation-cap"></i>
+                            <span class="link-text">Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">
+                            <i class="uil uil-file-alt"></i>
+                            <span class="link-text">Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
+                            <i class="uil uil-wrench"></i>
+                            <span class="link-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonial" class="nav-link">
+                            <i class="uil uil-star"></i>
+                            <span class="link-text">Testimonials</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="uil uil-comment-message"></i>
+                            <span class="link-text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color__mode__btn">
+                            <i class="uil uil-moon"></i>
+                            <span class="link-text">Theme</span>
+                        </a>
+                    </li>
+                </ul>    
+            </nav>
+        </header>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container">
+                    <div class="home__social">
+                        <a href="#" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="#" class="home__social-icon">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+                        <a href="#" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                    <h2 class="social__coming">SOCIAL LINKS!</h2>
+                    <div class="home__content grid">
+                        
+                        <div class="home__img__bg">
+                            <img src="assets/img/main/user2.png" class="home__image1" alt="">
+                            <img src="assets/img/main/logo.png" class="home__image2" alt="">
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hello there, I'm [NAME]</h1>
+                            <h3 class="home__subtitle">SUB TITLE</h3>
+                            <div class="home__scroll">
+                                <a href="#achievment" class="home__scroll-button button--flex">
+                                    <span class="home__scroll-name">Scroll down</span>
+                                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="home__buttons">
+                        <a download="" href="assets/pdf/Dummy CV.pdf" class="home__button button button--flex">
+                            <span class="button__text">CV</span>
+                            <i class="uil uil-download-alt button__icon--download"></i>
+                        </a>
+                        <a href="#contact" class="home__button button button--flex">Contact<i class="uil uil-message button__icon"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--==================== ACHIEVMENT ====================-->
+            <section class="achievment section" id="achievment">
+                <h1 class="section__title">Achievments</h2>
+                <span class="section__subtitle">Your achievments</span>
+                <div class="achievment__container container">
+                    <div class="achievment__tabs">
+                        <div class="achievment__tab button--flex achievment__active" data-target='#education'>
+                            <i class="uil uil-graduation-cap achievment__icon"></i>
+                            <strong class="achievment__title">Education</strong>
+                        </div>
+                        <div class="achievment__tab button--flex" data-target='#courses'>
+                            <i class="uil uil-award achievment__icon"></i>
+                            <strong class="achievment__title">Courses</strong>
+                        </div>
+                        <div class="achievment__tab button--flex" data-target='#sports'>
+                            <i class="uil uil-tennis-ball achievment__icon"></i>
+                            <strong class="achievment__title">Sports</strong>
+                        </div>
+                    </div>
+                    <div class="achievment__sections">
+                        <!--==================== ACIEVMENT  CONTENT 1 ====================-->
+                        <div class="swiper achievment__content achievment__active" data-content id="education">
+                            <div class="swiper-wrapper">
+                                <!--==================== Certificate 1 ====================-->
+                                <div class="achievment__data swiper-slide grid">
+                                    <div class="certificate__images">
+                                        <img src="assets/img/certificates/vecteezy_dummy-certificate.jpg" class="certificate__image1" alt="">
+                                    </div>
+                                    <div class="certificate__data">
+                                        <h3 class="certificate__title">Dummy certificate</h3>
+                                        <span class="certificate__subtitle">The issuing place</span>
+                                        <div class="certificate__calender"><i class="uil uil-calendar-alt"></i>2024</div>
+                                    </div>
+                                </div>
+                                
+                            </div> 
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>                                                  
+                        </div>
+                        <!--==================== ACIEVMENT  CONTENT 2 ====================-->
+                        <div class="swiper achievment__content" data-content id="courses">
+                            <div class="swiper-wrapper">
+                                <!--==================== Certificate 1 ====================-->
+                                <div class="achievment__data swiper-slide grid">
+                                    <div class="certificate__images">
+                                        <img src="assets/img/certificates/vecteezy_dummy-certificate.jpg" class="certificate__image1" alt="">
+                                    </div>
+                                    <div class="certificate__data">
+                                        <h3 class="certificate__title">Dummy certificate</h3>
+                                        <span class="certificate__subtitle">The issuing place</span>
+                                        <div class="certificate__calender"><i class="uil uil-calendar-alt"></i>2024</div>
+                                    </div>
+                                </div>
+                                <!--==================== Certificate 2 ====================-->
+                                <div class="achievment__data swiper-slide grid">
+                                    <div class="certificate__images">
+                                        <img src="assets/img/certificates/vecteezy_dummy-certificate.jpg" class="certificate__image1" alt="">
+                                    </div>
+                                    <div class="certificate__data">
+                                        <h3 class="certificate__title">Dummy certificate</h3>
+                                        <span class="certificate__subtitle">The issuing place</span>
+                                        <div class="certificate__calender"><i class="uil uil-calendar-alt"></i>2024</div>
+                                    </div>
+                                </div>
+                                <!--==================== Certificate 3 ====================-->
+                                <div class="achievment__data swiper-slide grid">
+                                    <div class="certificate__images">
+                                        <img src="assets/img/certificates/vecteezy_dummy-certificate.jpg" class="certificate__image1" alt="">
+                                    </div>
+                                    <div class="certificate__data">
+                                        <h3 class="certificate__title">Dummy certificate</h3>
+                                        <span class="certificate__subtitle">The issuing place</span>
+                                        <div class="certificate__calender"><i class="uil uil-calendar-alt"></i>2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>                                                 
+                        </div>
+                        <!--==================== ACIEVMENT  CONTENT 3 ====================-->
+                        <div class="swiper achievment__content" data-content id="sports">
+                            <div class="swiper-wrapper">
+                                <!--==================== Certificate 1 ====================-->
+                                <div class="achievment__data swiper-slide grid">
+                                    <div class="certificate__images">
+                                        <img src="assets/img/certificates/vecteezy_dummy-certificate.jpg" class="certificate__image1" alt="">
+                                    </div>
+                                    <div class="certificate__data">
+                                        <h3 class="certificate__title">Dummy certificate</h3>
+                                        <span class="certificate__subtitle">The issuing place</span>
+                                        <div class="certificate__calender"><i class="uil uil-calendar-alt"></i>2024</div>
+                                    </div>
+                                </div>
+                                <!--==================== Certificate 2 ====================-->
+                                <div class="achievment__data swiper-slide grid">
+                                    <div class="certificate__images">
+                                        <img src="assets/img/certificates/vecteezy_dummy-certificate.jpg" class="certificate__image1" alt="">
+                                    </div>
+                                    <div class="certificate__data">
+                                        <h3 class="certificate__title">Dummy certificate</h3>
+                                        <span class="certificate__subtitle">The issuing place</span>
+                                        <div class="certificate__calender"><i class="uil uil-calendar-alt"></i>2024</div>
+                                    </div>
+                                </div>
+                                <!--==================== Certificate 3 ====================-->
+                                <div class="achievment__data swiper-slide grid">
+                                    <div class="certificate__images">
+                                        <img src="assets/img/certificates/vecteezy_dummy-certificate.jpg" class="certificate__image1" alt="">
+                                    </div>
+                                    <div class="certificate__data">
+                                        <h3 class="certificate__title">Dummy certificate</h3>
+                                        <span class="certificate__subtitle">The issuing place</span>
+                                        <div class="certificate__calender"><i class="uil uil-calendar-alt"></i>2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>                   
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==================== LEARNING ====================-->
+            <section class="learning section" id="learning">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Your skills</span>
+
+                <div class="learning__container container grid">
+                    <!--==================== LEARNING 1 ====================-->
+                        <div class="learning__contents learning__active">
+                            <div class="learning__contents1 grid">
+                                <div class="learning__content1">
+                                    <i class='bx bxl-html5 learning__icon'></i>
+                                    <h3 class="learning__title">skill 1</h3>
+                                </div>
+                                <div class="learning__content2">
+                                    <i class='bx bxl-css3 learning__icon'></i>
+                                    <h3 class="learning__title">skill 2</h3>
+                                </div>
+                                <div class="learning__content3">
+                                    <i class='bx bxl-figma learning__icon'></i>
+                                    <h3 class="learning__title">skill 3</h3>
+                                </div>
+                                <div class="learning__content4">
+                                    <i class='bx bxl-javascript learning__icon' ></i>
+                                    <h3 class="learning__title">skill 4</h3>
+                                </div>
+                                <div class="learning__content5">
+                                    <i class='bx bxl-react learning__icon'></i>
+                                    <h3 class="learning__title">skill 5</h3>
+                                </div>
+                            </div>
+                            <h1 class="learning__catogery__title">Frontend Examples</h1>
+                        </div>
+                    <!--==================== LEARNING 2 ====================-->
+                        <div class="learning__contents">
+                            <div class="learning__contents2 grid">
+                                <div class="learning__content1">
+                                    <i class='bx bxl-python learning__icon'></i>
+                                    <h3 class="learning__title">skill 1</h3>
+                                </div>
+                                <div class="learning__content2">
+                                    <i class='bx bxl-flask learning__icon'></i>
+                                    <h3 class="learning__title">skill 2</h3>
+                                </div>
+                                <div class="learning__content3">
+                                    <i class='bx bxl-postgresql learning__icon'></i>
+                                    <h3 class="learning__title">skill 3</h3>
+                                </div>
+                            </div>
+                            <h1 class="learning__catogery__title">Backend Examples</h1>
+                        </div>
+                    <!--==================== LEARNING 3 ====================-->
+                        <div class="learning__contents">
+                            <div class="learning__contents3 grid">
+                                <div class="learning__content1">
+                                    <i class='bx bxl-unity learning__icon'></i>
+                                    <h3 class="learning__title">skill 1</h3>
+                                </div>
+                                <div class="learning__content2">
+                                    <img src="assets/img/other/icons8-c-sharp-logo.svg" alt="" class="learning__icon">
+                                    <h3 class="learning__title">skill 2</h3>
+                                </div>
+                                <div class="learning__content3">
+                                    <img src="assets/img/other/icons8-gimp.svg" alt="" class="learning__icon">
+                                    <h3 class="learning__title">skill 3</h3>
+                                </div>
+                                <div class="learning__content4">
+                                    <i class='bx bxl-blender learning__icon'></i>
+                                    <h3 class="learning__title">skill 4</h3>
+                                </div>
+                            </div>
+                            <h1 class="learning__catogery__title">Game DEV Examples</h1>
+                        </div>
+                </div>
+            </section>
+            <!--==================== BLOG ====================-->
+            <link rel="stylesheet" href="blog/blog.css">
+            <section class="blog section" id="blog">
+                <h2 class="section__title">Blog</h2>
+                <span class="section__subtitle">Your blog posts</span>
+                <div class="blog__header">
+                    <div class="blog__search"></div>
+                    <div class="blog__controls"></div>
+                </div>
+                <div class="blog__covers grid">
+                    <div class="blog__cover" onclick="location.href='#blog1';">
+                        <div class="blog__page1"></div>
+                        <div class="blog__page2">
+                            <h2 class="blog__cover__title">Title 1</h1>
+                            <h1 class="blog__cover__logo">PPT</h1>
+                            <h1 class="blog__cover__notice">PLACE HOLDER1</h1>
+                            <span class="blog__cover__issue">issue #1 (soon)</span>
+                        </div>
+                        <div class="blog__date">2024</div>
+                        <div class="blog__tags">Tech</div>
+                    </div>
+                    <div class="blog__cover" onclick="location.href='#blog2';">
+                        <div class="blog__page1"></div>
+                        <div class="blog__page2">
+                            <h2 class="blog__cover__title">Title 2</h1>
+                            <h1 class="blog__cover__logo">PPT</h1>
+                            <h1 class="blog__cover__notice">PLACE HOLDER2</h1>
+                            <span class="blog__cover__issue">issue #2 (soon)</span>
+                        </div>
+                        <div class="blog__date">2024</div>
+                        <div class="blog__tags">Tech</div>
+                    </div>
+                    <div class="blog__cover" onclick="location.href='#blog3';">
+                        <div class="blog__page1"></div>
+                        <div class="blog__page2">
+                            <h2 class="blog__cover__title">Title 3</h1>
+                            <h1 class="blog__cover__logo">PPT</h1>
+                            <h1 class="blog__cover__notice">PLACE HOLDER3</h1>
+                            <span class="blog__cover__issue">issue #3 (soon)</span>
+                        </div>
+                        <div class="blog__date">2024</div>
+                        <div class="blog__tags">Tech</div>
+                    </div>
+                    <div class="blog__cover" onclick="location.href='#blog4';">
+                        <div class="blog__page1"></div>
+                        <div class="blog__page2">
+                            <h2 class="blog__cover__title">Title 4</h1>
+                            <h1 class="blog__cover__logo">PPT</h1>
+                            <h1 class="blog__cover__notice">PLACE HOLDER4</h1>
+                            <span class="blog__cover__issue">issue #4 (soon)</span>
+                        </div>
+                        <div class="blog__date">2024</div>
+                        <div class="blog__tags">Tech</div>
+                    </div>
+                    <div class="blog__cover" onclick="location.href='#blog5';">
+                        <div class="blog__page1"></div>
+                        <div class="blog__page2">
+                            <h2 class="blog__cover__title">Title 5</h1>
+                            <h1 class="blog__cover__logo">PPT</h1>
+                            <h1 class="blog__cover__notice">PLACE HOLDER5</h1>
+                            <span class="blog__cover__issue">issue #5 (soon)</span>
+                        </div>
+                        <div class="blog__date">2024</div>
+                        <div class="blog__tags">Tech</div>
+                    </div>
+                    <div class="blog__cover" onclick="location.href='#blog6';">
+                        <div class="blog__page1"></div>
+                        <div class="blog__page2">
+                            <h2 class="blog__cover__title">Title 6</h1>
+                            <h1 class="blog__cover__logo">PPT</h1>
+                            <h1 class="blog__cover__notice">PLACE HOLDER6</h1>
+                            <span class="blog__cover__issue">issue #6 (soon)</span>
+                        </div>
+                        <div class="blog__date">2024</div>
+                        <div class="blog__tags">Tech</div>
+                    </div>
+                </div>
+                <div class="blog__return__button">
+                    <i class='bx bx-arrow-back blog__return__icon'></i>Back
+                </div>
+                <div class="blog__footer">
+                    <a href="#blogwebsite">Check out more articles by clicking here!</a>
+                </div>
+            </section>
+            <script src="blog/blog.js">
+                
+            </script>
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <div class="intro__bg">
+                    <div class="intro__container container grid">
+                        <div class="intro__data">
+                            <h2 class="intro__title">Projects</h2>
+                            <p class="intro__description">Here you can showcase you projects in various areas like web, mobile, etc..</p>
+                        </div>
+                        <img src="assets/img/projects/Project_img1.png" alt="" class="intro__img">
+                    </div>
+                </div>
+                <div class="projects__container">
+                    <!--==================== PROJECT 1 ====================-->
+                    <div class="project__content">
+                        <div class="icon">
+                            <i class='bx bx-aperture project__img'></i>
+                        </div>
+                        <h1 class="project__title">Project 1</h1>
+                        <P class="project__description">Project 1 subtitle!</P>
+                        <div class="project__date"><i class="uil uil-calendar-alt"></i>2024</div>
+                        <button class="project__btn" id="open-project-modal">Read more</button>
+                    </div>
+                    <div class="project__modal__container" id="project-modal-container">
+                        <div class="project__modal__content">
+                            <div class="modal__close close-project-modal" title="Close">
+                                <i class="uil uil-times"></i>
+                            </div>  
+                            <h1 class="project__modal__title">Project 1</h1>
+                            <span class="project__modal__date">2024</span>     
+                            <div class="project__img__group">
+                                <img src="assets/img/projects/Project1/1.png" class="project__modal__img" alt="">
+                                <img src="assets/img/projects/Project1/2.png" class="project__modal__img" alt="">
+                                <img src="assets/img/projects/Project1/3.png" class="project__modal__img" alt="">
+                                <img src="assets/img/projects/Project1/4.png" class="project__modal__img" alt="">
+                            </div>
+                            <div class="project__img__group">
+                                <img src="assets/img/projects/Project1/5.png" class="project__modal__img" alt="">
+                                <img src="assets/img/projects/Project1/6.png" class="project__modal__img" alt="">
+                                <img src="assets/img/projects/Project1/7.png" class="project__modal__img" alt="">
+                                <img src="assets/img/projects/Project1/8.png" class="project__modal__img" alt="">
+                            </div>
+                            <div class="project__modal__icons">Technology Used: <i class='bx bxl-java'></i></div>
+                            <p class="project__modal__description"><strong>Description:</strong> Description of your project<br> <br>
+                                <strong>features:</strong><br>
+                                - Feature 1 <br>
+                                - Feature 2 <br>
+                                - Feature 3 
+                            </p>  
+                            <div class="modal__close3 close-project-modal" title="Close">
+                                <i class="uil uil-times"></i>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--==================== PROJECT 2 ====================-->
+                    <div class="project__content">
+                        <button class="btn2">COMING SOON</button>
+                    </div>
+                    <!--==================== PROJECT 3 ====================-->
+                    <div class="project__content">
+                        <button class="btn2">COMING SOON</button>
+                    </div>
+                </div>
+            </section>
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section" id="testimonial">
+                <h2 class="section__title">Testimonials</h2>
+                <span class="section__subtitle">Your clients opinions</span>
+                <div class="swiper testimonial__container">
+                    <div class="swiper-wrapper">
+                        <!--==================== TESTIMONIAL 1 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <div class="testimonial__img__bg">
+                                        <i class='bx bx-user-plus testimonial__img2'></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="testimonial__name">username1</h3>
+                                        <span class="testimonial__job">client #1</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class='bx bxs-star testimonial__icon-star'></i>
+                                    <i class='bx bxs-star testimonial__icon-star'></i>
+                                    <i class='bx bxs-star testimonial__icon-star'></i>
+                                    <i class='bx bx-star testimonial__icon-star' ></i>
+                                    <i class='bx bx-star testimonial__icon-star' ></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">Client's tesitmony1</p>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 2 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <div class="testimonial__img__bg">
+                                        <i class='bx bx-user-minus testimonial__img2'></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="testimonial__name">username2</h3>
+                                        <span class="testimonial__job">client #2</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class='bx bx-star testimonial__icon-star' ></i>
+                                    <i class='bx bx-star testimonial__icon-star' ></i>
+                                    <i class='bx bx-star testimonial__icon-star' ></i>
+                                    <i class='bx bx-star testimonial__icon-star' ></i>
+                                    <i class='bx bx-star testimonial__icon-star' ></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">Client's tesitmony2</p>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 3 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div></div>
+                            <p class="testimonial__description">more clinets</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Your contact page!</span>
+                <div class="contact__container container grid">
+                    <div class="contact__infos">
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">123-456-7890</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email Me</h3>
+                                <a class="contact__subtitle">example[at]email.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Earth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <lable class="contact__label">Name</lable>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <lable class="contact__label">Email</lable>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <lable class="contact__label">Subject</lable>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <lable class="contact__label">Message</lable>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                        <div>
+                            <a href="#sendMessage" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>                            
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--==================== FOOTER ====================-->
+            <footer class="footer">
+                <div class="footer__bg">
+                    <div class="footer__container container grid">
+                        <div class="footer__title__parent">
+                            <a href="#home" class="footer__title">Footer</a>
+                        </div>
+
+                        <ul class="footer__links1">
+                            <li>
+                                <a href="#home" class="footer__link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#achievment" class="footer__link">Achievments</a>
+                            </li>
+                            <li>
+                                <a href="#learning" class="footer__link">Skills</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__links2">
+                            <li>
+                                <a href="#projects" class="footer__link">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial" class="footer__link">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="#blog" class="footer__link">Blog</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__socials">
+                            <a href="#footer" class="footer__social">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+                            <a href="#footer" class="footer__social">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="#footer" class="footer__social">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid" style="gap: 0;">
+                        <a href="#sources" class="sources__modal__link" id="open-modal">Sources</a>
+                        <div>
+                            <a target="_blank" href="https://icons8.com/icon/55205/c-sharp-logo" style="color: #fff;">C Sharp Logo, </a><a target="_blank" href="https://icons8.com/icon/39868/gimp" style="color: #fff;">GIMP</a> icons by <a target="_blank" href="https://icons8.com" style="color: #fff;">Icons8, </a>
+                            <a target="_blank" href="https://www.flaticon.com/free-icons/user" title="user icons" style="color: #fff;">User icons created by Md Tanvirul Haque - Flaticon ,</a>
+                            <a target="_blank" href="https://www.vecteezy.com/free-vector/certificate" style="color: #fff;">Certificate Vectors by Vecteezy</a>
+                        </div>  
+                    </div>
+                    
+                    <div class="sources__container" id="sources-modal-container">
+                        <div class="sources__content">
+                            <div class="modal__close close-modal" title="Close">
+                                <i class="uil uil-times"></i>
+                            </div>   
+                            <h2>Most of the sources / tutorials I used to put together this site!</h2>    
+                            <i class="uil uil-youtube sources__icon">Youtube!</i>
+                            <ul class="sources__list">
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=27JtRAI3QO8" target="_blank" class="source">youtube.com/watch?v=27JtRAI3QO8</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=biOMz4puGt8" target="_blank" class="source">youtube.com/watch?v=biOMz4puGt8</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=0xMQfnTU6oo" target="_blank" class="source">youtube.com/watch?v=0xMQfnTU6oo</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=AOxKn4_j4JQ" target="_blank" class="source">youtube.com/watch?v=AOxKn4_j4JQ</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=MCMZXn8vzlg" target="_blank" class="source">youtube.com/watch?v=MCMZXn8vzlg</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=fBRzD6dwJfw" target="_blank" class="source">youtube.com/watch?v=fBRzD6dwJfw</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=F3ABpPwexCg" target="_blank" class="source">youtube.com/watch?v=F3ABpPwexCg</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=8tSbE3X29kQ" target="_blank" class="source">youtube.com/watch?v=8tSbE3X29kQ</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=kk5dZVfCpgk" target="_blank" class="source">youtube.com/watch?v=kk5dZVfCpgk</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=NQP89ish9t8" target="_blank" class="source">youtube.com/watch?v=NQP89ish9t8</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=sFSJfxFb5XA" target="_blank" class="source">youtube.com/watch?v=sFSJfxFb5XA/a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=mPGi1IHQxFM" target="_blank" class="source">youtube.com/watch?v=mPGi1IHQxFM</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=0lyngYIozro" target="_blank" class="source">youtube.com/watch?v=0lyngYIozro</a>
+                                </li>
+                            </ul>
+
+                            <i class="uil uil-globe sources__icon">Web!</i>
+                            <ul class="sources__list">
+                                <li class="source__item">
+                                    <a href="https://swiperjs.com/" target="_blank" class="source">https://swiperjs.com/</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://iconscout.com/" target="_blank" class="source">https://iconscout.com/</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://icons8.com/" target="_blank" class="source">https://icons8.com/</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://boxicons.com/" target="_blank" class="source">https://boxicons.com/</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://scrollrevealjs.org/" target="_blank" class="source">https://scrollrevealjs.org/</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://favicon.io/favicon-converter/" target="_blank" class="source">https://favicon.io/favicon-converter/</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/17296919/how-to-prevent-css3-animation-reset-when-finished" target="_blank" class="source">https://stackoverflow.com/questions/17296919/how-to-prevent-css3-animation-reset-when-finished</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3docs.com/snippets/css/how-to-create-animation-on-page-load.html" target="_blank" class="source">https://www.w3docs.com/snippets/css/how-to-create-animation-on-page-load.html</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/4405954/how-do-i-remove-the-horizontal-scrollbar-in-a-div" target="_blank" class="source">https://stackoverflow.com/questions/4405954/how-do-i-remove-the-horizontal-scrollbar-in-a-div</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://blog.hubspot.com/website/center-an-image-in-html#:~:text=Step%201%3A%20Wrap%20the%20image,to%20a%20fixed%20length%20value." target="_blank" class="source">https://blog.hubspot.com/website/center-an-image-in-html#:~:text=Step%201%3A%20Wrap%20the%20image,to%20a%20fixed%20length%20value.</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.geeksforgeeks.org/how-to-align-content-of-a-div-to-the-bottom-using-css/" target="_blank" class="source">https://www.geeksforgeeks.org/how-to-align-content-of-a-div-to-the-bottom-using-css/</a>
+                                </li>
+                                
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/9383163/how-do-i-position-a-div-at-the-bottom-center-of-the-screen" target="_blank" class="source">https://stackoverflow.com/questions/9383163/how-do-i-position-a-div-at-the-bottom-center-of-the-screen</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank" class="source">https://www.w3schools.com/js/js_if_else.asp</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/6909692/how-to-perform-an-action-every-couple-of-seconds" target="_blank" class="source">https://stackoverflow.com/questions/6909692/how-to-perform-an-action-every-couple-of-seconds</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/48152119/how-to-play-animation-on-div-with-javascript" target="_blank" class="source">https://stackoverflow.com/questions/48152119/how-to-play-animation-on-div-with-javascript</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out" target="_blank" class="source">https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://blog.hubspot.com/website/center-div-css#:~:text=To%20center%20a%20div%20horizontally%20on%20a%20page%2C%20simply%20set,equally%20between%20the%20two%20margins" target="_blank" class="source">https://blog.hubspot.com/website/center-div-css#:~:text=To%20center%20a%20div%20horizontally%20on%20a%20page%2C%20simply%20set,equally%20between%20the%20two%20margins</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/11628764/wrapping-a-div-around-content-and-keeping-it-centered" target="_blank" class="source">https://stackoverflow.com/questions/11628764/wrapping-a-div-around-content-and-keeping-it-centered</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank" class="source">https://www.w3schools.com/cssref/css3_pr_box-shadow.asp</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" class="source">https://www.w3schools.com/html/html_forms.asp</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/31763329/hide-div-when-user-reaches-the-bottom-of-page" target="_blank" class="source">https://stackoverflow.com/questions/31763329/hide-div-when-user-reaches-the-bottom-of-page</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://bobbyhadz.com/blog/javascript-change-style-of-all-elements-with-class" target="_blank" class="source">https://bobbyhadz.com/blog/javascript-change-style-of-all-elements-with-class</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/28726430/css-how-to-scale-an-image-from-the-center-instead-of-top-left" target="_blank" class="source">https://stackoverflow.com/questions/28726430/css-how-to-scale-an-image-from-the-center-instead-of-top-left</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3schools.com/html/html_favicon.asp" target="_blank" class="source">https://www.w3schools.com/html/html_favicon.asp</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/26986129/play-multiple-css-animations-at-the-same-time" target="_blank" class="source">https://stackoverflow.com/questions/26986129/play-multiple-css-animations-at-the-same-time</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia" target="_blank" class="source">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3schools.com/css/css_list.asp" target="_blank" class="source">https://www.w3schools.com/css/css_list.asp</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.w3schools.com/jsref/event_onmouseover.asp" target="_blank" class="source">https://www.w3schools.com/jsref/event_onmouseover.asp</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://stackoverflow.com/questions/10765755/how-to-apply-multiple-transforms-in-css" target="_blank" class="source">https://stackoverflow.com/questions/10765755/how-to-apply-multiple-transforms-in-css</a>
+                                </li>
+                            </ul>  
+                            <a href="assets/sources/refrences.html" target="_blank" class="refrences__button">MORE!</a>
+                            <div class="modal__close2 close-modal" title="Close">
+                                <i class="uil uil-times"></i>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script>
+            let achievmentSwiper = new Swiper(".achievment__content", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+
+            let testimonialSwiper = new Swiper(".testimonial__container", {
+            loop: true,
+            autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true
+            }
+            });
+
+        </script>
+    </body>
+</html>
